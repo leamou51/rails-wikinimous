@@ -1,7 +1,8 @@
-<h1>My Articles</h1>
-
-<% @articles.each do |article| %>
-  <ul>
-    <li><p><%= link_to article.title, article_path(article)%></p><p><%= article.content.first(50) %>...</p></li>
+<div class="container">
+  <ul class = "list-index">
+  <% @articles.each do |article| %>
+    <li d="title"><%= link_to article.title, article_path(article)%></li>
+    <li id="subtitle"><%= article.content.first(50) %>...</li>
+  <% end %>
   </ul>
-<% end %>
+</div>

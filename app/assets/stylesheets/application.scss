@@ -1,0 +1,74 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+@import "bootstrap/scss/bootstrap";
+@import "font-awesome-sprockets";
+@import "font-awesome";
+body {
+  margin:0px;
+  font-family:'Open Sans', sans-serif;
+  font-weight: lighter;
+}
+.banner {
+  font-family: 'Mulish', sans-serif;
+  background-color: #1d3557;
+  display:flex;
+  justify-content: space-between;
+  padding:12px;
+  margin:0px;
+}
+.banner a {
+  color:white;
+  text-decoration: none;
+  font-size:20px;
+}
+ul.list-index {
+  list-style: none;
+  padding:20px;
+}
+#title {
+  padding-bottom: 10px;
+  font-size: 20px;
+  color: #457B9D
+}
+#title a {
+  color: #457B9D;
+  font-weight:bold;
+}
+#subtitle {
+  padding-bottom: 20px;
+  font-family: Mulish;
+  font-size:15px;
+}
+.container {
+  display: flex;
+  justify-content: center;
+}
+h1 {
+  font-size:30px;
+}
+.page-new, .page-show {
+  width:500px;
+  margin-left:200px;
+  margin-top:20px;
+  padding-top:20px;
+}
+.page-show h1 {
+  border-bottom-style: solid;
+  border-bottom-color:rgba(0,0,0,0.1);
+  border-bottom-width: 2px;
+  padding-bottom: 20px;
+}
